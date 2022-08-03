@@ -49,7 +49,7 @@ int QFSignalProxy::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
                 if (type == QMetaType::QVariant) {
                     v = *reinterpret_cast<QVariant *>(_a[i + 1]);
                 } else {
-                    v = QVariant(type, _a[i + 1]);
+                    v = QVariant(QMetaType{type}, _a[i + 1]);
                 }
 
                 message[parameterNames.at(i)] = v;

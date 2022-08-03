@@ -17,7 +17,7 @@ set(CMAKE_DEBUG_POSTFIX d)
 set(SRC_DIR "${PROJECT_SOURCE_DIR}/src")
 
 include(GNUInstallDirs)
-find_package(Qt5 COMPONENTS Core Quick Qml Gui CONFIG REQUIRED)
+find_package(Qt6 COMPONENTS Core Quick Qml Gui CONFIG REQUIRED)
 
 set(quickflux_PRIVATE_SOURCES
   ${SRC_DIR}/priv/qfhook.cpp
@@ -101,9 +101,9 @@ add_library(QuickFlux::quickflux ALIAS quickflux)
 
 target_link_libraries(quickflux
   PUBLIC
-  Qt5::Qml
-  Qt5::Quick
-  Qt5::Core
+  Qt6::Qml
+  Qt6::Quick
+  Qt6::Core
   )
 
 target_include_directories(quickflux
