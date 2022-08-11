@@ -1,5 +1,5 @@
 pragma Singleton
-import QtQuick 2.0
+import QtQuick 6.3
 import QuickFlux 1.1
 
 RootStore {

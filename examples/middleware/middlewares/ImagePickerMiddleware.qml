@@ -1,5 +1,5 @@
-import QtQuick 2.0
-import QtQuick.Dialogs 1.0
+import QtQuick 6.3
+import QtQuick.Dialogs 6.3
 import QuickFlux 1.1
 import "../actions"
 import "../components"

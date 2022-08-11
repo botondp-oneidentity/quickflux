@@ -1,5 +1,5 @@
 pragma Singleton
-import QtQuick 2.0
+import QtQuick 6.3
 
 QtObject {
     property int value: 13
